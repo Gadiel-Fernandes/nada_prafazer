@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta Modificada</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .fullpage-wrapper {
+            width: 100%;
+            height: 100vh;
+            background: radial-gradient(#353c44, #222931);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reactor-container {
+            width: 300px;
+            height: 300px;
+            border: 1px dashed #888;
+            position: relative;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .abs-center {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .core-inner {
+            width: 70px;
+            height: 70px;
+            border: 5px solid #1b4e5f;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 7px 5px #52FEFE 0px 0px 10px 10px #52fefe inset;
+        }
+
+        .core-outer {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #52FEFE;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 7px 5px #52FEFE 0px 0px 10px 10px #52fefe inset;
+        }
+
+        .core-wrapper {
+            width: 180px;
+            height: 180px;
+            background-color: #073c4b;
+            box-shadow: 0px 0px 7px 5px #52FEFE 0px 0px 10px 10px #52fefe inset;
+        }
+
+        .tunnel {
+            width: 220px;
+            height: 220px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 7px 5px #52FEFE 0px 0px 10px 10px #52fefe inset;
+        }
+
+        .coil-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            animation-name: reactor-anim;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .coil {
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            top: calc(50% - 110px);
+            left: calc(50% - 15px);
+            transform-origin: 15px 110px;
+            background-color: #073c4b;
+            box-shadow: 0px 0px 7px 5px #52FEFE 0px 0px 10px 10px #52fefe inset;
+        }
+
+        .coil-1 {
+            transform: rotate(0deg);
+        }
+
+        .coil-2 {
+            transform: rotate(45deg);
+        }
+
+        .coil-3 {
+            transform: rotate(90deg);
+        }
+
+        .coil-4 {
+            transform: rotate(135deg);
+        }
+        .coil-5 {
+        transform: rotate(180deg);
+        }
+
+        .coil-6 {
+        transform: rotate(225deg);
+        }
+
+        .coil-7 {
+        transform: rotate(270deg);
+        }
+
+        .coil-8 {
+        transform: rotate(315deg);
+    }
+
+    .number {
+        position: absolute;
+        font-size: 12px;
+        color: #fff;
+        transform-origin: center center;
+    }
+
+    .number-1 {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .number-2 {
+        top: 20%;
+        left: 80%;
+        transform: translateX(-50%);
+    }
+
+    /* Adicione os estilos para os demais números... */
+
+    @keyframes reactor-anim {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="fullpage-wrapper">
+        <div class="reactor-container">
+            <div class="tunnel circle abs-center"></div>
+            <div class="core-outer circle abs-center"></div>
+            <div class="core-inner circle abs-center"></div>
+            <div class="coil-container">
+                <div class="coil coil-1"></div>
+                <div class="coil coil-2"></div>
+                <div class="coil coil-3"></div>
+                <div class="coil coil-4"></div>
+                <div class="coil coil-5"></div>
+                <div class="coil coil-6"></div>
+                <div class="coil coil-7"></div>
+                <div class="coil coil-8"></div>
+                <div class="number number-1">1</div>
+                <div class="number number-2">2</div>
+                <!-- Adicione os elementos para os demais números... -->
+                <div class="number number-3">3</div>
+                <div class="number number-4">4</div>
+                <div class="number number-5">5</div>
+                <div class="number number-6">6</div>
+                <div class="number number-7">7</div>
+                <div class="number number-8">8</div>
+                <div class="number number-9">9</div>
+                <div class="number number-10">10</div>
+                <div class="number number-11">11</div>
+                <div class="number number-12">12</div>
+                <div class="number number-13">13</div>
+                <div class="number number-14">14</div>
+                <div class="number number-15">15</div>
+                <div class="number number-16">16</div>
+                <div class="number number-17">17</div>
+                <div class="number number-18">18</div>
+                <div class="number number-19">19</div>
+                <div class="number number-20">20</div>
+                <div class="number number-21">21</div>
+                <div class="number number-22">22</div>
+                <div class="number number-23">23</div>
+                <div class="number number-24">24</div>
+                <div class="number number-25">25</div>
+                <div class="number number-26">26</div>
+                <div class="number number-27">27</div>
+<div class="number number-28">28</div>
+<div class="number number-29">29</div>
+<div class="number number-30">30</div>
+<div class="number number-31">31</div>
+<div class="number number-32">32</div>
+<div class="number number-33">33</div>
+<div class="number number-34">34</div>
+<div class="number number-35">35</div>
+<div class="number number-36">36</div>
+<div class="number number-37">37</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
